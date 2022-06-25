@@ -14,6 +14,17 @@ spec:
     spec:
       containers:
         - name: simulator
-          image: desenvolvimentodaian/imersao8-simulator:latest
+          image: desenvolvimentodaian/simulator-imersao8:latest
+          volumeMounts:
+              - name: simulator-volume
+                mountPath: /go/src/.env
+                subPath: .env
 
+      volumes:
+        - name: simulator-volume
+          configMap:
+            name: simulator-conf
+            items:
+              - key: env
+                path: .env
 
