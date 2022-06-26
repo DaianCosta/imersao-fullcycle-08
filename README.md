@@ -6,6 +6,16 @@
 ## Sobre o repositório
 Esse repositório contém todo código utilizado durante as aulas para referência.
 
-Faça seu fork e também nos dê uma estrelinha para nos ajudar a divulgar o projeto.
+Foi desenvolvido os seguintes projetos:
 
-As instruções de instalações estão no README.md de cada projeto.
+micro-service em Go para leitura de arquivo texto contendo as posições de cada entregador
+
+api nodejs, com nestjs para consumir topico no kafka e disponibilizar as posições para o front-end reacts, através de socket.io
+
+front-end com reactjs, utilizando materia-ui, socket.io e google maps
+
+elasticserach e kibana para analise das entregas e posições dos entregadores
+
+kubernetes na gcp com os seguintes manifestos: (deployment, configMap, service e ingress)
+
+Mongodb como banco noSql para armazenar os dados dos entregadores
